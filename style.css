@@ -1,11 +1,12 @@
 :root {
- --bg-color: #ffffff;
-  --text-color: #25283d;
-  --primary-color: #edcf8e;
-  --accent-color: #dec1ff;
-  --highlight-color: #ee6123;
-  --button-color: #508484;
-  --section-bg: #fdf7e7;
+ --primary: #dec1ff;
+  --secondary: #edcf8e;
+  --accent: #508484;
+  --highlight: #ee6123;
+  --dark-bg: #25283d;
+  --light-bg: #ffffff;
+  --light-text: #25283d;
+  --dark-text: #f0f0f0;
 }
 
 body.dark {
@@ -102,11 +103,11 @@ h1 {
 }
 
 .accordion:hover {
-  background-color: #218838;
+  background-color: #1b0d5a;
 }
 
 .accordion.active {
-  background-color: #1e7e34;
+  background-color: #1b0d5a;
 }
 
 .arrow {
@@ -142,8 +143,16 @@ h1 {
 }
 
 .collapsible .section-header {
+   padding: 10px 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
   background-color: var(--primary-color);
-  color: var(--text-color);
+  color: var(--section-text-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--highlight-color);
 }
 
 .collapsible.active .section-header {
