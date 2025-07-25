@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vanilla_Cake_Recipe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="light">
+  
+  <header>
+    <h1>🎂 Vanilla Cake Recipe</h1>
+    <div class="theme-toggle">
+      <button id="toggleTheme">🌙 Light</button>
+      <button onclick="printWithTitle()">🖨️ Print Recipe</button>
+    </div>
+  </header>
+
+  <!-- INGREDIENTS -->
+  <button class="accordion" data-id="ingredients">
+    <span class="arrow">▶</span> 📝 Ingredients
+  </button>
+  <div class="panel">
+    <button id="checkAllBtn">✅ Check All</button>
+
+    <h3>Dry:</h3>
+    <ul class="checklist">
+      <li><label><input type="checkbox" data-id="flour"> 2 ½ cups flour</label></li>
+      <li><label><input type="checkbox" data-id="bake_powder"> 2 ½ tsp baking powder</label></li>
+      <li><label><input type="checkbox" data-id="salt"> ½ tsp salt</label></li>
+      <li><label><input type="checkbox" data-id="sugar"> 1 cup sugar</label></li>
+    </ul>
+
+    <h3>Wet:</h3>
+    <ul class="checklist">
+      <li><label><input type="checkbox" data-id="milk"> 1 cup milk</label></li>
+      <li><label><input type="checkbox" data-id="butter"> ¾ cup oil or butter</label></li>
+      <li><label><input type="checkbox" data-id="egg"> 3 large eggs</label></li>
+      <li><label><input type="checkbox" data-id="vanilla"> 2 tsp vanilla</label></li>
+    </ul>
+  </div>
+  <!-- INSTRUCTIONS -->
+  <button class="accordion" data-id="steps">
+    <span class="arrow">▶</span> 🍰 Instructions
+  </button>
+  <div class="panel">
+    <ol>
+      <li>Preheat oven to 180°C (350°F). Grease and flour your cake pan.</li>
+      <li>Sift flour, baking powder, and salt.</li>
+      <li>Whisk sugar, eggs, milk, oil, and vanilla until smooth.</li>
+      <li>Combine wet and dry ingredients gently.</li>
+      <li>Pour batter into pan. Tap to remove bubbles.</li>
+      <li>Bake for 30–35 mins or until toothpick comes clean.</li>
+      <li>Cool in pan 10 mins, then wire rack.</li>
+    </ol>
+  </div>
+  <!-- OPTIONALS -->
+  <button class="accordion" data-id="optionals">
+    <span class="arrow">▶</span> 💡 Optionals (Tips, Notes & Variations)
+  </button>
+  <div class="panel">
+    <ul>
+      <li>Make it chocolate: replace ½ cup flour with cocoa.</li>
+      <li>Add-ins: chips, nuts, fruit zest.</li>
+      <li>Frost with buttercream, whipped cream, or ganache.</li>
+      <li>Store airtight in fridge up to 3 days.</li>
+    </ul>
+  </div>
+  
+  <footer>
+  <h3>🍰 Did You Know?</h3>
+  <ul id="funFacts"></ul>
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
